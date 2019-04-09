@@ -1,0 +1,18 @@
+body {
+  background-color: lightgreen;
+}
+
+h3 {
+  font-family: verdana;
+  font-size: 26px;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+#multimedia {
+     width: 800px;
+     margin: 0 auto;
+	 text-align: center;
+}
