@@ -2,17 +2,32 @@ body {
   background-color: lightgreen;
 }
 
+h2 {
+  font-family: verdana;
+  font-size: 25px;
+}
+
 h3 {
   font-family: verdana;
-  font-size: 26px;
+  font-size: 18px;
 }
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 14px;
+}
+
+#titulo {
+     width: 800px;
+     margin: 0 auto;
+	 text-align: center;
+	 margin-top: 100px;
+	 margin-bottom: 100px;
 }
 
 #multimedia {
      width: 800px;
      margin: 0 auto;
 	 text-align: center;
+	 margin-top: 100px;
+	 margin-bottom: 100px;
 }

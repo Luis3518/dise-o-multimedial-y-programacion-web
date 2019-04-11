@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
- 
-<link rel="stylesheet" type="text/css" href="estilo.css"> 
+
+		<link rel="stylesheet" type="text/css" href="estilo.css"> 
   
-    <title>Luis Rodriguez</title>
+		<title>Luis Rodriguez - T1</title>
 
- <div id="multimedia">
-  <h3>Video incrustado</h3>
-  <p>Este es un video dentro del sitio</p>
+		<div id="titulo">
+			<h2>Diseño multimedial y programacion web 1</h2>
+			<p>Este es un sitio creado por Luis Rodriguez</p>
+		</div> 
+		
+		<div id="multimedia">
+			<h3>Objetos en JavaScript</h3>
+			<p>Esta es un ejemplo de la función "mouseover" de JavaScript.</p>
+			<img src="consublanco.png" id="imagen"> 
+			<script>
+				window.addEventListener('load', iniciar, false);
+				function iniciar() {
+					var imagen = document.getElementById('imagen');
+					imagen.addEventListener('mouseover', negro, false);
+					imagen.addEventListener('mouseout', blanco, false);
+					}
+				function blanco(){
+					var imagen = document.getElementById('imagen').src = "consublanco.png";
+					}
+				function negro() {
+					var imagen = document.getElementById('imagen').src = "consunegro.png";
+					}
+			</script>
+		</div> 
 
+		<div id="multimedia">
+			<h3>Directiva AngularJS</h3>
+			<p>Este es un formulario con "checkbox" usando "ng-model".</p>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>	
+				<div ng-app="">
+					<form>
+						Activa el check para activar el "header":
+						<input type="checkbox" ng-model="myVar">
+					</form>
+					<h1 ng-show="myVar">Consudec</h1>
+				</div>
+		</div> 
+		
+		<div id="multimedia">
+			<h3>Directiva Jquery</h3>
+			<p>Este es un formulario que oculta o muestra las lineas deseadas usando los metodos ".hide" y ".show".</p>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+			<script>
+				$(document).ready(function(){
+					$("#hide").click(function(){
+						$(".test").hide();
+					});
+					$("#show").click(function(){
+						$(".test").show();
+					});
+				});
+			</script>
+			<button id="hide">Ocultar</button>
+			<button id="show">Mostrar</button>
+			<h2 class="test">Titulo del texto a ocultar</h2>
+			<p class="test">Parrafo a ocultar</p>
+			<p>Este es otro parrafo que no se oculta</p>
+		</div> 
+		
+		<div id="multimedia">
+			<h3>Video incrustado</h3>
+			<p>Este es un video dentro del sitio.</p>
+				<video width="320" height="240" controls>
+				<source src="video.mp4" type="video/mp4">
+				</video> 
+		</div> 
 
-<video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
-</div> 
+		<div id="multimedia">
+			<h3>Video incrustado</h3>
+			<p>Este es un video insertado desde youtube.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/GKUSkr1oMhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div> 
 
-</video> 
+		<div id="multimedia">
+			<h3>Audio incrustado</h3>
+			<p>Este es un audio dentro del sitio.</p>
+			<audio controls>
+				<source src="audio.mp3" type="audio/mpeg">
+			</audio> 
+		</div> 
 
- <div id="multimedia">
-  <h3>Video incrustado</h3>
-  <p>Este es un video insertado desde youtube</p>
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GKUSkr1oMhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</div> 
-
- <div id="multimedia">
-  <h3>Audio incrustado</h3>
-  <p>Este es un audio dentro del sitio</p>
-
-
- <audio controls>
-  <source src="audio.mp3" type="audio/mpeg">
-
-</audio> 
-
-</div> 
-
- <div id="multimedia">
-  <h3>Mapa incrustado</h3>
-  <p>Este es un video importado desde google maps</p>
-
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.188158663517!2d-58.38034228527918!3d-34.59940328046061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac970efd8ed%3A0xeee8cb508bba7b38!2sConsudec!5e0!3m2!1ses-419!2sar!4v1554497240912!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</div> 
-
+		<div id="multimedia">
+			<h3>Mapa incrustado</h3>
+			<p>Este es un video importado desde google maps.</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.188158663517!2d-58.38034228527918!3d-34.59940328046061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac970efd8ed%3A0xeee8cb508bba7b38!2sConsudec!5e0!3m2!1ses-419!2sar!4v1554497240912!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div> 
   </body>
 </html>
