@@ -11,25 +11,7 @@
 			<p>Este es un sitio creado por Luis Rodriguez</p>
 		</div> 
 		
-		<div id="multimedia">
-			<h3>Objetos en JavaScript</h3>
-			<p>Esta es un ejemplo de la función "mouseover" de JavaScript.</p>
-			<img src="consublanco.png" id="imagen"> 
-			<script>
-				window.addEventListener('load', iniciar, false);
-				function iniciar() {
-					var imagen = document.getElementById('imagen');
-					imagen.addEventListener('mouseover', negro, false);
-					imagen.addEventListener('mouseout', blanco, false);
-					}
-				function blanco(){
-					var imagen = document.getElementById('imagen').src = "consublanco.png";
-					}
-				function negro() {
-					var imagen = document.getElementById('imagen').src = "consunegro.png";
-					}
-			</script>
-		</div> 
+
 
 		<div id="multimedia">
 			<h3>Directiva AngularJS</h3>
@@ -62,7 +44,27 @@
 			<button id="show">Mostrar</button>
 			<h2 class="test">Titulo del texto a ocultar</h2>
 			<p class="test">Parrafo a ocultar</p>
-			<p>Este es otro parrafo que no se oculta</p>
+			<p>Este es otro parrafo dentro del mismo formulario que no se oculta</p>
+		</div> 
+		
+		<div id="multimedia">
+			<h3>Objetos en JavaScript</h3>
+			<p>Esta es un ejemplo de la función "mouseover" de JavaScript.</p>
+			<img src="consublanco.png" id="imagen"> 
+			<script>
+				window.addEventListener('load', iniciar, false);
+				function iniciar() {
+					var imagen = document.getElementById('imagen');
+					imagen.addEventListener('mouseover', negro, false);
+					imagen.addEventListener('mouseout', blanco, false);
+					}
+				function blanco(){
+					var imagen = document.getElementById('imagen').src = "consublanco.png";
+					}
+				function negro() {
+					var imagen = document.getElementById('imagen').src = "consunegro.png";
+					}
+			</script>
 		</div> 
 		
 		<div id="multimedia">
