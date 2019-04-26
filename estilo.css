@@ -1,7 +1,6 @@
 body {
-  background-color: lightgreen;
+  box-shadow:inset -70px 0 200px -30px rgba(0,0,0,.75);
 }
-
 h2 {
   font-family: verdana;
   font-size: 25px;
@@ -10,14 +9,32 @@ h2 {
 h3 {
   font-family: verdana;
   font-size: 18px;
-}
+} 
+
+h4 {
+  width: 800px;
+  font-family: verdana;
+  font-size: 14px;
+  background-color: silver 	;
+  text-align: left;
+  color: black;
+} 
 p {
   font-family: verdana;
   font-size: 14px;
 }
 
+pre {
+  width: 800px;
+  font-family: verdana;
+  font-size: 14px;
+  background-color: silver 	;
+  text-align: left;
+  color: black;
+}
+
 #titulo {
-     width: 800px;
+	 width: 1600px;
      margin: 0 auto;
 	 text-align: center;
 	 margin-top: 100px;
@@ -25,9 +42,16 @@ p {
 }
 
 #multimedia {
-     width: 800px;
+     width: 1600px;
      margin: 0 auto;
 	 text-align: center;
 	 margin-top: 100px;
 	 margin-bottom: 100px;
+}
+
+#myHammer {
+  background: silver;
+  height: 300px;
+  text-align: center;
+  font: 30px/300px Helvetica, Arial, sans-serif;
 }

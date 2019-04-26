@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-		<link rel="stylesheet" type="text/css" href="estilo.css"> 
-  
+  <head>
+  		<link rel="stylesheet" type="text/css" href="estilo.css" >	
+		<meta name="viewport" content="initial-scale=1">
 		<title>Luis Rodriguez - T1</title>
 
 		<div id="titulo">
 			<h2>Diseño multimedial y programacion web 1</h2>
 			<p>Este es un sitio creado por Luis Rodriguez</p>
+			<img src="angularjs.png">
 		</div> 
 		
 
@@ -19,12 +20,24 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>	
 				<div ng-app="">
 					<form>
-						Activa el check para activar el "header":
+						Activa el check para activar el texto oculto:
 						<input type="checkbox" ng-model="myVar">
 					</form>
 					<h1 ng-show="myVar">Consudec</h1>
 				</div>
-		</div> 
+			<h4>Codigo:</h4>
+			<pre><code>
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js&quot;&gt;
+&lt;/script&gt;
+&lt;div ng-app=&quot;&quot;&gt;
+&lt;form&gt;
+Activa el check para activar el &quot;header&quot;:
+&lt;input type=&quot;checkbox&quot; ng-model=&quot;myVar&quot;&gt;
+&lt;/form&gt;
+&lt;h1 ng-show=&quot;myVar&quot;&gt;Consudec&lt;/h1&gt;
+&lt;/div&gt;
+			</pre></code>
+		</div>
 		
 		<div id="multimedia">
 			<h3>Directiva Jquery</h3>
@@ -45,11 +58,31 @@
 			<h2 class="test">Titulo del texto a ocultar</h2>
 			<p class="test">Parrafo a ocultar</p>
 			<p>Este es otro parrafo dentro del mismo formulario que no se oculta</p>
+			<h4>Codigo:</h4>
+			<pre><code>
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;
+&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function(){
+$(&quot;#hide&quot;).click(function(){
+$(&quot;.test&quot;).hide();
+});
+$(&quot;#show&quot;).click(function(){
+$(&quot;.test&quot;).show();
+});
+});
+&lt;/script&gt;
+&lt;button id=&quot;hide&quot;&gt;Ocultar&lt;/button&gt;
+&lt;button id=&quot;show&quot;&gt;Mostrar&lt;/button&gt;
+&lt;h2 class=&quot;test&quot;&gt;Titulo del texto a ocultar&lt;/h2&gt;
+&lt;p class=&quot;test&quot;&gt;Parrafo a ocultar&lt;/p&gt;
+&lt;p&gt;Este es otro parrafo dentro del mismo formulario que no se oculta&lt;/p&gt;
+			</pre></code>
 		</div> 
 		
 		<div id="multimedia">
 			<h3>Objetos en JavaScript</h3>
-			<p>Esta es un ejemplo de la función "mouseover" de JavaScript.</p>
+			<p>Esta es un ejemplo de la función "mouseover" de JavaScript (si no dispone de mouse funciona tocando sobre y fuera de la imagen)</p>
 			<img src="consublanco.png" id="imagen"> 
 			<script>
 				window.addEventListener('load', iniciar, false);
@@ -65,6 +98,20 @@
 					var imagen = document.getElementById('imagen').src = "consunegro.png";
 					}
 			</script>
+		</div> 
+		
+		<div id="multimedia">
+			<h3>Deteccion de gestos</h3>
+			<p>Este es un detector de gestos usando "hammerjs"</p>
+			<script src="https://hammerjs.github.io/dist/hammer.js"></script>	
+				<div id="myHammer"></div>
+				<script>
+					var myHammer = document.getElementById('myHammer');
+					var mc = new Hammer(myHammer);
+					mc.on("panleft panright tap press", function(ev) {
+					myHammer.textContent = ev.type + " detected";
+					});
+				</script>
 		</div> 
 		
 		<div id="multimedia">
