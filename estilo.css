@@ -1,12 +1,15 @@
 body {
+  margin: 0px;
   box-shadow:inset -70px 0 200px -30px rgba(0,0,0,.75);
 }
 h2 {
+  margin: 0px;
   font-family: verdana;
   font-size: 25px;
 }
 
 h3 {
+  margin: 0px;
   font-family: verdana;
   font-size: 18px;
 } 
@@ -34,19 +37,17 @@ pre {
 }
 
 #titulo {
-	 width: 1600px;
+	 width: 800px;
      margin: 0 auto;
 	 text-align: center;
-	 margin-top: 100px;
-	 margin-bottom: 100px;
+
 }
 
 #multimedia {
-     width: 1600px;
+     width: 800px;
      margin: 0 auto;
 	 text-align: center;
-	 margin-top: 100px;
-	 margin-bottom: 100px;
+
 }
 
 #myHammer {
