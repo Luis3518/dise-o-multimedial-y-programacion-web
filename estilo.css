@@ -2,56 +2,49 @@ body {
   margin: 0px;
   box-shadow:inset -70px 0 200px -30px rgba(0,0,0,.75);
 }
+h1 {
+  margin: 0px;
+  font-size: xx-large;
+  font: sans-serif;
+}
+
 h2 {
   margin: 0px;
-  font-family: verdana;
-  font-size: 25px;
+  font-size: large;
+  font: fantasy;
 }
 
 h3 {
-  margin: 0px;
-  font-family: verdana;
-  font-size: 18px;
+	margin: 0px;
+	font-family: fantasy;
+	font-size: large;
 } 
 
-h4 {
-  
-  font-family: verdana;
-  font-size: 14px;
-  background-color: silver;
-  color: black;
-} 
 p {
-  font-family: verdana;
-  font-size: 14px;
+  font-family: fantasy;
+  font-size: medium;
+}
+img{
+	margin: 0 auto;
+	text-align: center;
 }
 
-pre {
-  width: 800px;
-  font-family: verdana;
-  font-size: 14px;
-  background-color: silver 	;
-  text-align: left;
-  color: black;
+hr{
+	border: 5px solid silver;
 }
+
 
 #titulo {
-
      margin: 0 auto;
 	 text-align: center;
-
 }
 
 #multimedia {
-
      margin: 0 auto;
 	 text-align: center;
-
 }
 
-img{
-	width:100%;
-}
+
 
 #myHammer {
   margin: 0 auto;
