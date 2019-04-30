@@ -5,7 +5,6 @@
 		<link rel="stylesheet" type="text/css" href="estilo.css" >	
 		<meta name="viewport" content="initial-scale=1">
 		<title>Luis Rodriguez - T1</title>
-
 		<div id="titulo">
 			<h2>Diseño multimedial y programacion web 1</h2>
 			<p>Este es un sitio creado por Luis Rodriguez</p>
@@ -18,28 +17,23 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>	
 				<div ng-app="">
 					<form>
-						Activa el check para activar el texto oculto:
+						Activa el check para mostrar el texto oculto:
 						<input type="checkbox" ng-model="myVar">
 					</form>
 					<h1 ng-show="myVar">Consudec</h1>
 				</div>
-			<h4>Codigo:</h4>
-			<pre><code>
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js&quot;&gt;
-&lt;/script&gt;
-&lt;div ng-app=&quot;&quot;&gt;
-&lt;form&gt;
-Activa el check para activar el &quot;header&quot;:
-&lt;input type=&quot;checkbox&quot; ng-model=&quot;myVar&quot;&gt;
-&lt;/form&gt;
-&lt;h1 ng-show=&quot;myVar&quot;&gt;Consudec&lt;/h1&gt;
-&lt;/div&gt;
-			</pre></code>
+
+		<p class="codepen" data-height="300" data-theme-id="36776" data-default-tab="html,result" data-user="lurogmx" data-slug-hash="KYLXRy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Ngmodel checkbox">
+		<span>See the Pen <a href="https://codepen.io/lurogmx/pen/KYLXRy/">
+		Ngmodel checkbox</a> by Luis Rodriguez (<a href="https://codepen.io/lurogmx">@lurogmx</a>)
+		on <a href="https://codepen.io">CodePen</a>.</span>
+		</p>
+		<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 		</div>
 		
 		<div id="multimedia">
 			<h3>Directiva Jquery</h3>
-			<p>Este es un formulario que oculta o muestra las lineas deseadas usando los metodos ".hide" y ".show".</p>
+			<p>Este es un formulario que oculta o muestra los parrafos indicados usando los metodos ".hide" y ".show".</p>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 			<script>
 				$(document).ready(function(){
@@ -57,30 +51,17 @@ Activa el check para activar el &quot;header&quot;:
 			<p class="test">Parrafo a ocultar</p>
 			<p>Este es otro parrafo dentro del mismo formulario que no se oculta</p>
 			<h4>Codigo:</h4>
-			<pre><code>
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;
-&lt;/script&gt;
-&lt;script&gt;
-$(document).ready(function(){
-$(&quot;#hide&quot;).click(function(){
-$(&quot;.test&quot;).hide();
-});
-$(&quot;#show&quot;).click(function(){
-$(&quot;.test&quot;).show();
-});
-});
-&lt;/script&gt;
-&lt;button id=&quot;hide&quot;&gt;Ocultar&lt;/button&gt;
-&lt;button id=&quot;show&quot;&gt;Mostrar&lt;/button&gt;
-&lt;h2 class=&quot;test&quot;&gt;Titulo del texto a ocultar&lt;/h2&gt;
-&lt;p class=&quot;test&quot;&gt;Parrafo a ocultar&lt;/p&gt;
-&lt;p&gt;Este es otro parrafo dentro del mismo formulario que no se oculta&lt;/p&gt;
-			</pre></code>
+				<p class="codepen" data-height="300" data-theme-id="36776" data-default-tab="html,result" data-user="lurogmx" data-slug-hash="JVqyMO" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Ocultar texto Jquery">
+				<span>See the Pen <a href="https://codepen.io/lurogmx/pen/JVqyMO/">
+				Ocultar texto Jquery</a> by Luis Rodriguez (<a href="https://codepen.io/lurogmx">@lurogmx</a>)
+				on <a href="https://codepen.io">CodePen</a>.</span>
+				</p>
+				<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 		</div> 
 		
 		<div id="multimedia">
 			<h3>Objetos en JavaScript</h3>
-			<p>Esta es un ejemplo de la función "mouseover" de JavaScript (si no dispone de mouse funciona tocando sobre y fuera de la imagen)</p>
+			<p>Esta es un ejemplo de la función "mouseover" de JavaScript (sin mouse tambien funciona, tocando sobre la imagen para activar y fuera de la imagen para desactivar)</p>
 			<img src="consublanco.png" id="imagen"> 
 			<script>
 				window.addEventListener('load', iniciar, false);
@@ -100,7 +81,7 @@ $(&quot;.test&quot;).show();
 		
 		<div id="multimedia">
 			<h3>Deteccion de gestos</h3>
-			<p>Este es un detector de gestos usando "hammerjs"</p>
+			<p>Este es un detector de gestos usando "hammerjs" (arrastre el mouse o el dedo sobre el panel)</p>
 			<script src="https://hammerjs.github.io/dist/hammer.js"></script>	
 				<div id="myHammer"></div>
 				<script>

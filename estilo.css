@@ -15,11 +15,10 @@ h3 {
 } 
 
 h4 {
-  width: 800px;
+  
   font-family: verdana;
   font-size: 14px;
-  background-color: silver 	;
-  text-align: left;
+  background-color: silver;
   color: black;
 } 
 p {
@@ -37,20 +36,26 @@ pre {
 }
 
 #titulo {
-	 width: 800px;
+
      margin: 0 auto;
 	 text-align: center;
 
 }
 
 #multimedia {
-     width: 800px;
+
      margin: 0 auto;
 	 text-align: center;
 
 }
 
+img{
+	width:100%;
+}
+
 #myHammer {
+  margin: 0 auto;
+  width: 600px;
   background: silver;
   height: 300px;
   text-align: center;
