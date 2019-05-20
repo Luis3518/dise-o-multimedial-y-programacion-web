@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Luis Rodriguez - T1 - Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>.
+  <script src="js/angular.min.js"></script>	
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Luis Rodriguez - T1</h1>
+  <h2>Materia: Diseño multimedial y programacion web 1</h2>
+  <h2>Profesor: Pablo Conrado</h2>
+  <p>Sitio bootstrap con frameworks de javascript</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+		<h3>AngularJS</h3>
+		<p>Este es un formulario con "checkbox" usando "ng-model"</p>
+				<div ng-app="">
+					<form>
+						<p>Activa el check para mostrar el texto oculto:
+						<input type="checkbox" ng-model="myVar"></p>
+					</form>
+					<h3 ng-show="myVar">Consudec</h3>
+				</div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Directiva Jquery</h3>
+			<p>Este es un formulario que oculta o muestra los parrafos indicados usando los metodos ".hide" y ".show".</p>
+			
+			<script>
+				$(document).ready(function(){
+					$("#hide").click(function(){
+						$(".test").hide();
+					});
+					$("#show").click(function(){
+						$(".test").show();
+					});
+				});
+			</script>
+			<button id="hide">Ocultar</button>
+			<button id="show">Mostrar</button>
+			<h3 class="test">Titulo del texto a ocultar</h3>
+			<p class="test">Parrafo a ocultar</p>
+			<p>Este es otro parrafo dentro del mismo formulario que no se oculta</p>
+   </div>
+    <div class="col-sm-4">
+      <h3>Objetos en JavaScript</h3>     
+			<p>Este es un ejemplo de la función "mouseover" de javascript (con touch funciona de forma erratica)</p>
+			<img src="multimedia\consublanco.png" id="imagen"> 
+			<script>
+				window.addEventListener('load', iniciar, false);
+				function iniciar() {
+					var imagen = document.getElementById('imagen');
+					imagen.addEventListener('mouseover', negro, false);
+					imagen.addEventListener('mouseout', blanco, false);
+					}
+				function blanco(){
+					var imagen = document.getElementById('imagen').src = "\multimedia\consublanco.png";
+					}
+				function negro() {
+					var imagen = document.getElementById('imagen').src = "\multimedia\consunegro.png";
+					}
+			</script>	  
+	</div>
+
+	    <div class="col-sm-4">
+			<h3>VueJS</h3>
+			<p>Boton que invierte las letras de una palabra programado en el framework VueJS</p>
+			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <div id="app">
+				<p>{{ message }}</p>
+				<input v-model="message">
+				<button v-on:click="reverseMessage">Invertir Mensaje</button>
+			</div>
+        	<script>
+				var app = new Vue({
+				el: '#app',
+				data: {
+				message: 'consudec'
+				},
+				methods: {
+				reverseMessage: function () {
+				this.message = this.message.split('').reverse().join('')
+				}
+				}
+				})
+			</script>	
+    </div>
+	    <div class="col-sm-4">
+			<h3>Video</h3>
+			<p>Este es un video guardado dentro del sitio.</p>
+				<video width="320" height="240" controls>
+				<source src="video.mp4" type="video/mp4">
+				</video> 
+    </div>
+	    <div class="col-sm-4">
+			<h3>Video incrustado</h3>
+			<p>Este es un video insertado desde youtube.</p>
+			<iframe width="320" height="240" src="https://www.youtube.com/embed/GKUSkr1oMhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div> 
+		<div class="col-sm-4">
+			<h3>Audio</h3>
+			<p>Este es un audio dentro del sitio.</p>
+			<audio controls>
+				<source src="audio.mp3" type="audio/mpeg">
+			</audio> 
+    </div>
+		<div class="col-sm-4">
+			<h3>Mapa incrustado</h3>
+			<p>Este es un video importado desde google maps.</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.188158663517!2d-58.38034228527918!3d-34.59940328046061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac970efd8ed%3A0xeee8cb508bba7b38!2sConsudec!5e0!3m2!1ses-419!2sar!4v1554497240912!5m2!1ses-419!2sar" width="320" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+		<div class="col-sm-4">
+      <h3>Contador</h3>
+	  <p>Este es un contador usando vueJS</p>
+	  		<div id="ejemplo-2">
+			<button v-on:click="counter += 1">+ 1</button>
+			<p>El boton ha sido presionado {{ counter }} veces.</p>
+		</div>	
+		<script>
+			new Vue({
+			el: '#ejemplo-2',
+			data: {
+			counter: 0
+			}
+			})
+		</script>	
+    </div>
+  </div>
+</div>
+<footer>
+
+<div>
+	<p>Programado por: <em>Luis Rodriguez</em></p>
+	<a title="Github" href="https://github.com/Luis3518"» target=»_blank»><img src="multimedia\github.png" alt="Github" /></a>
+	<a title="Instagram" href="https://www.instagram.com/luis.rodriguez3518/"» target=»_blank»><img src="multimedia\instagram.png" alt="Instagram" /></a>
+	<a title="Linkedin" href="https://www.linkedin.com/in/luis-rodriguez3518/"» target=»_blank»><img src="multimedia\linkedin.png" alt="Linkedin" /></a>
+	<a title="Mail" href="mailto:luis.rodriguez@bue.edu.ar"» target=»_blank»><img src="multimedia\mail.png" alt="Mail" /></a>
+	<a title="Reddit" href="https://reddit.com/u/LuisRodriguez3518"» target=»_blank»><img src="multimedia\reddit.png" alt="Reddit" /></a>
+	<a title="Skype" href="https://join.skype.com/invite/zfyTMWg0wG65"» target=»_blank»><img src="multimedia\skype.png" alt="Skype" /></a>
+	<a title="Twitter" href="https://twitter.com/Rodriguez_LuisM"» target=»_blank»><img src="multimedia\twitter.png" alt="Twitter" /></a>
+	<a title="Wordpress" href="https://profeluisrodriguez.wordpress.com/"» target=»_blank»><img src="multimedia\wordpress.png" alt="Wordpress" /></a>.
+	<a title="Youtube" href="https://www.youtube.com/channel/UCeUy8gpKa_umOxenhLdUIiQ/videos"» target=»_blank»><img src="multimedia\youtube.png" alt="Youtube" /></a>
+</div>
+
+</footer>
+</body>
+</html>
