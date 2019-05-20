@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="estilo.css">
   <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>.
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/angular.min.js"></script>	
+  <script src="js/vue.js"></script>
 </head>
 <body>
 
@@ -63,18 +64,19 @@
 					imagen.addEventListener('mouseout', blanco, false);
 					}
 				function blanco(){
-					var imagen = document.getElementById('imagen').src = "\multimedia\consublanco.png";
+					var imagen = document.getElementById('imagen').src = "https://raw.githubusercontent.com/Luis3518/diseno-multimedial-y-programacion-web/gh-pages/multimedia/consublanco.png";
 					}
 				function negro() {
-					var imagen = document.getElementById('imagen').src = "\multimedia\consunegro.png";
+					var imagen = document.getElementById('imagen').src = "https://raw.githubusercontent.com/Luis3518/diseno-multimedial-y-programacion-web/gh-pages/multimedia/consunegro.png";
 					}
-			</script>	  
+			</script>	
+<div><hr></div>			
 	</div>
 
 	    <div class="col-sm-4">
 			<h3>VueJS</h3>
 			<p>Boton que invierte las letras de una palabra programado en el framework VueJS</p>
-			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
             <div id="app">
 				<p>{{ message }}</p>
 				<input v-model="message">
@@ -98,7 +100,7 @@
 			<h3>Video</h3>
 			<p>Este es un video guardado dentro del sitio.</p>
 				<video width="320" height="240" controls>
-				<source src="video.mp4" type="video/mp4">
+				<source src="multimedia\video.mp4" type="video/mp4">
 				</video> 
     </div>
 	    <div class="col-sm-4">
@@ -110,7 +112,7 @@
 			<h3>Audio</h3>
 			<p>Este es un audio dentro del sitio.</p>
 			<audio controls>
-				<source src="audio.mp3" type="audio/mpeg">
+				<source src="multimedia\audio.mp3" type="audio/mpeg">
 			</audio> 
     </div>
 		<div class="col-sm-4">
