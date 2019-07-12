@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Luis Rodriguez - T1 - Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.min.js"></script>	
+  <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="sideNavigation" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Inicio</a>
+  <a href="cv.html">Curriculum Vitae</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+ 
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+ 
+<div id="main">
+
+<script>
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+ <script>
+        $(document).ready(function(){
+       $("#Formulario").submit(function( event ){
+		event.preventDefault();
+
+		$.ajax({
+			type: 'POST',
+			url: '../php/contacto2.php',
+			data: $(this).serialize(),
+			success: function(data){
+				$("#respuesta").slideDown();
+				$("#respuesta").html(data);
+                $('#respuesta2').modal('show');
+                document.getElementById('Formulario').reset();
+			}
+		});
+
+		return false;
+	});
+});
+    </script>
+  </head>
+<body>
+
+<!-- Content -->
+<section>
+    <div class="container">
+        <div class="container">
+            <h4>Consudec</h4>
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.188158663517!2d-58.38034228527918!3d-34.59940328046061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac970efd8ed%3A0xeee8cb508bba7b38!2sConsudec!5e0!3m2!1ses-419!2sar!4v1554497240912!5m2!1ses-419!2sar" style="border:0" allowfullscreen="" frameborder="0" height="250" width="100%"></iframe>
+            </div>
+            <strong>Contactenos</strong><br><strong>Oficina:</strong> (011)4326-3831
+            <hr>
+        </div>
+        <div class="container">
+            <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+                <div class="form-group">
+                    <label class="control-label" for="Nombre">Nombres</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+                </div>            
+                <div class="form-group">
+                    <label class="control-label" for="Motivo">Motivo de Contacto</label>
+                    <select name="Motivo" class="form-control">
+                        <option value="Consulta General">Consulta General</option>
+                        <option value="Realizar Pedido">Realizar Pedido</option>
+                        <option value="Informe un problema">Informe un problema</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Empresa">Empresa</label>
+                    <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
+                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Mensaje">Mensaje</label>
+                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+                </div>
+                <div class="form-group">                
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <input type="reset" class="btn btn-default" value="Limpiar">                
+                </div>
+                <div id="respuesta" style="display: none;"></div>
+            </form>
+        </div>       
+    </div>
+</section>
+
+</body>
+</html>
+
+<footer>
+
+<div>
+	<p>Programado por: <em>Luis Rodriguez</em></p>
+	<a title="Github" href="https://github.com/Luis3518"» target=»_blank»><img src="multimedia\github.png" alt="Github" /></a>
+	<a title="Instagram" href="https://www.instagram.com/luis.rodriguez3518/"» target=»_blank»><img src="multimedia\instagram.png" alt="Instagram" /></a>
+	<a title="Linkedin" href="https://www.linkedin.com/in/luis-rodriguez3518/"» target=»_blank»><img src="multimedia\linkedin.png" alt="Linkedin" /></a>
+	<a title="Mail" href="mailto:luis.rodriguez@bue.edu.ar"» target=»_blank»><img src="multimedia\mail.png" alt="Mail" /></a>
+	<a title="Reddit" href="https://reddit.com/u/LuisRodriguez3518"» target=»_blank»><img src="multimedia\reddit.png" alt="Reddit" /></a>
+	<a title="Skype" href="https://join.skype.com/invite/zfyTMWg0wG65"» target=»_blank»><img src="multimedia\skype.png" alt="Skype" /></a>
+	<a title="Twitter" href="https://twitter.com/Rodriguez_LuisM"» target=»_blank»><img src="multimedia\twitter.png" alt="Twitter" /></a>
+	<a title="Wordpress" href="https://profeluisrodriguez.wordpress.com/"» target=»_blank»><img src="multimedia\wordpress.png" alt="Wordpress" /></a>
+	<a title="Youtube" href="https://www.youtube.com/channel/UCeUy8gpKa_umOxenhLdUIiQ/videos"» target=»_blank»><img src="multimedia\youtube.png" alt="Youtube" /></a>
+</div>
+</div>
+</footer>
+</body>
+</html>

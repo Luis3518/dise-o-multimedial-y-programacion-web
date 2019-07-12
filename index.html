@@ -12,13 +12,44 @@
 </head>
 <body>
 
+<div id="sideNavigation" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Inicio</a>
+  <a href="cv.html">Curriculum Vitae</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+ 
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+ 
+<div id="main">
+
+<script>
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
 <div class="jumbotron text-center">
   <h1>Luis Rodriguez - T1</h1>
   <h2>Materia: Diseño multimedial y programacion web 1</h2>
   <h2>Profesor: Pablo Conrado</h2>
   <p>Sitio bootstrap con frameworks de javascript</p> 
 </div>
-  
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -149,10 +180,10 @@
 	<a title="Reddit" href="https://reddit.com/u/LuisRodriguez3518"» target=»_blank»><img src="multimedia\reddit.png" alt="Reddit" /></a>
 	<a title="Skype" href="https://join.skype.com/invite/zfyTMWg0wG65"» target=»_blank»><img src="multimedia\skype.png" alt="Skype" /></a>
 	<a title="Twitter" href="https://twitter.com/Rodriguez_LuisM"» target=»_blank»><img src="multimedia\twitter.png" alt="Twitter" /></a>
-	<a title="Wordpress" href="https://profeluisrodriguez.wordpress.com/"» target=»_blank»><img src="multimedia\wordpress.png" alt="Wordpress" /></a>.
+	<a title="Wordpress" href="https://profeluisrodriguez.wordpress.com/"» target=»_blank»><img src="multimedia\wordpress.png" alt="Wordpress" /></a>
 	<a title="Youtube" href="https://www.youtube.com/channel/UCeUy8gpKa_umOxenhLdUIiQ/videos"» target=»_blank»><img src="multimedia\youtube.png" alt="Youtube" /></a>
 </div>
-
+</div>
 </footer>
 </body>
 </html>

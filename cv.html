@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Luis Rodriguez - T1 - Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.min.js"></script>	
+  <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="sideNavigation" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Inicio</a>
+  <a href="cv.html">Curriculum Vitae</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+ 
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+ 
+<div id="main">
+
+<script>
+function openNav() {
+    document.getElementById("sideNavigation").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+ 
+function closeNav() {
+    document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+<div class="jumbotron text-center">
+	<h3>CV Luis Miguel Rodriguez</h3>
+	<img src="multimedia\cv.png" width="240"/>
+  
+</div>
+
+
+	    <div class="col-sm-4">
+			<h3>Sobre mi:</h3>
+	<p><b>Nombre:</b>Luis Miguel Rodriguez</p>
+  <p><b>Mail:</b>luis.m.rodriguez@outlook.com</p>
+  <p><b>Estado civil:</b>Soltero</p>
+  <p><b>Edad:</b>29</p>
+  <p><b>Fecha de nacimiento:</b>13 de Noviembre de 1989</p>
+  <p><b>Cuil:</b>20-34999135-8</p>
+  <p><b>Direccion:</b>Santo Tome 5329 - Monte Castro CABA</p>
+  <p><b>Telefono:</b>1150619978</p>
+		
+    </div>
+
+	    <div class="col-sm-4">
+			<h3>Experiencia</h3>
+			<p><b>DIC 2011 – ACTUALIDAD • DESARROLLADOR • PARTICULAR</b><BR>		
+Phyton, C#, Asp.net, Javascript, Bootstrap. Desarrollos en varias tecnologías de forma particular.<BR>
+<b>ABR 2014 - ACTUALIDAD • DOCENTE • ESCUELA TECNICA 35</b><BR>
+Profesor de informática, redes, programación, soporte técnico y electrónica.<BR>
+<b>MAR 2012 – ABR 2018 • TECNICO • CONECTAR IGUALDAD</b><BR>
+Reparación de netbooks - Configuración de la infraestructura de la red - Programación de scripts<BR>
+<b>DIC 2012 – MAR 2014 • TECNICO • NEAR - IT </b><BR>
+Integrador de sistemas – infraestructura, servidores, desktop y notebooks – helpdesk y asistencia remota.<BR>
+<b>ENE 2010 – OCT 2012 • CADETE/ENCARGADO • COTO </b><BR>
+Logistica – envios a domicilio – coordinacion de equipo de trabajo de hasta diez integrantes.<BR>
+</p>
+			
+		</div>
+
+	    <div class="col-sm-4">
+			<h3>Educacion</h3>
+			<p><b>DIC 2019 (ESTIMADO) • PROFESOR DE INFORMATICA • CONSUDEC</b><BR>		
+Formación específica: Sistemas operativos, Base de datos, programación visual avanzada, Diseño gráfico, Diseño web, Redes. <BR>
+<b>DIC 2015 • CCNA CISCO • FUNDACIÓN PROYEDESA</b><BR>
+Certificación entregada por la compañía Cisco Systems a los profesionales que operan equipamiento de networking.<BR>
+<b>DIC 2011 • TÉCNICO EN COMPUTACIÓN• ESCUELA TECNICA 35 </b><BR>
+Perfil del egresado: Proyectar, producir, adaptar, implantar y mantener aplicaciones informáticas.  Proyectar, instalar, configurar y mantener sistemas informáticos.  <BR>
+</p>
+		
+    </div>
+	
+
+	
+  </div>
+</div>
+<footer>
+
+<div>
+	<p>Programado por: <em>Luis Rodriguez</em></p>
+	<a title="Github" href="https://github.com/Luis3518"» target=»_blank»><img src="multimedia\github.png" alt="Github" /></a>
+	<a title="Instagram" href="https://www.instagram.com/luis.rodriguez3518/"» target=»_blank»><img src="multimedia\instagram.png" alt="Instagram" /></a>
+	<a title="Linkedin" href="https://www.linkedin.com/in/luis-rodriguez3518/"» target=»_blank»><img src="multimedia\linkedin.png" alt="Linkedin" /></a>
+	<a title="Mail" href="mailto:luis.rodriguez@bue.edu.ar"» target=»_blank»><img src="multimedia\mail.png" alt="Mail" /></a>
+	<a title="Reddit" href="https://reddit.com/u/LuisRodriguez3518"» target=»_blank»><img src="multimedia\reddit.png" alt="Reddit" /></a>
+	<a title="Skype" href="https://join.skype.com/invite/zfyTMWg0wG65"» target=»_blank»><img src="multimedia\skype.png" alt="Skype" /></a>
+	<a title="Twitter" href="https://twitter.com/Rodriguez_LuisM"» target=»_blank»><img src="multimedia\twitter.png" alt="Twitter" /></a>
+	<a title="Wordpress" href="https://profeluisrodriguez.wordpress.com/"» target=»_blank»><img src="multimedia\wordpress.png" alt="Wordpress" /></a>
+	<a title="Youtube" href="https://www.youtube.com/channel/UCeUy8gpKa_umOxenhLdUIiQ/videos"» target=»_blank»><img src="multimedia\youtube.png" alt="Youtube" /></a>
+</div>
+</div>
+</footer>
+</body>
+</html>
